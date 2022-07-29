@@ -140,6 +140,12 @@ body {
 
 }
 
+div.welcome-container {
+	background-color: rgb(21, 83, 145);	
+	height: 100%;
+	width: 100%;  
+}
+
 div.login-holder {
   text-align: center;
   background-color: rgb(0, 35, 70);
