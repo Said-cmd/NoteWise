@@ -1,9 +1,8 @@
 import React from "react";
 
-function NoteList() {
+function SideBar() {
     return (
 
     );
 }
-
-export default NoteList;
+export default Sidebar;

@@ -1,13 +1,13 @@
-import React from "react";
-import Login from "./Login";
-import Logo from "./Logo"
+import React from 'react';
+import Login from "./Login"
+import Navbar from "./Navbar"
 
 function App() {
   return (
-    <div>
-      <Logo />
-      <Login />
-    </div>
+	<div className='App'>
+	<Navbar />
+	<Login />
+	</div>
   );
 }
 

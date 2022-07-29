@@ -9,10 +9,16 @@ function Login() {
         <h1 className="login-title">Welcome to NoteWise</h1>
         <h2 className="login-subtitle">Please login to continue</h2>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="Username" />
+        <Form.Control 
+        type="text" 
+        placeholder="Username"
+        />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control 
+        type="password" 
+        placeholder="Password"
+        />
       </Form.Group>
       <Button variant="primary" type="submit">
         Login
@@ -21,4 +27,5 @@ function Login() {
         </div>
     );
 }
+
 export default Login;

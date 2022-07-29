@@ -1,9 +1,8 @@
 import React from "react";
 
-function NoteList() {
+function Search() {
     return (
-
     );
 }
 
-export default NoteList;
+export default Search;
