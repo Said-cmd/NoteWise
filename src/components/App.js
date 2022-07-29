@@ -5,8 +5,8 @@ import Navbar from "./Navbar"
 function App() {
   return (
 	<div className='App'>
-	<Navbar />
-	<Login />
+		<Navbar />
+		<Login />
 	</div>
   );
 }
