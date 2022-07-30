@@ -1,0 +1,24 @@
+{
+    "notes": [
+      {
+        "id": 1,
+        "content": "Hello! This is our first note, Hurray!",
+        "date": "30/07/2022"
+      },
+      {
+        "id": 2,
+        "content": "Hello! This is our second note, Hurray!",
+        "date": "30/07/2022"
+      },
+      {
+        "id": 3,
+        "content": "Hello! This is our third note, Hurray!",
+        "date": "30/07/2022"
+      },
+      {
+        "id": 4,
+        "content": "Hello! This is our fourth note, Hurray!",
+        "date": "30/07/2022"
+      }
+    ]
+  }
