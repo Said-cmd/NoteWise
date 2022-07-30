@@ -1,17 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { BsToggleOff } from "react-icons/bs"
-{/*import { BsToggleOn } from "react-icons/bs"*/}
+import { BsToggleOn } from "react-icons/bs";
 
-function Header({ handleDarkMode, isDarkMode, setIsDarkMode }) {
-
-    function handleDarkMode() {
-        setIsDarkMode((isDarkMode) => !isDarkMode);
-    }
-    
+function Header({ handleDarkMode, isDarkMode }) { 
     return (
         <div className="header">
             <h1>NoteWise</h1>
-            <BsToggleOff onClick={handleDarkMode} className="toggle-icon" size="3rem"/>
+            {isDarkMode ? <BsToggleOn onClick={handleDarkMode} className="toggle-icon" size="3rem"/> : <BsToggleOff onClick={handleDarkMode} className="toggle-icon" size="3rem"/>}
         </div>
     );
 }

@@ -2,48 +2,53 @@
   "notes": [
     {
       "id": 1,
-      "content": "Hello! This is our first note, Hurray!",
+      "content": "Hello! This is your first note.",
       "date": "30/07/2022"
     },
     {
       "id": 2,
-      "content": "Hello! This is our second note, Hurray!",
+      "content": "Hello! This is your second note.",
       "date": "30/07/2022"
     },
     {
       "id": 3,
-      "content": "Hello! This is our third note, Hurray!",
+      "content": "This is your third note.",
       "date": "30/07/2022"
     },
     {
       "id": 4,
-      "content": "Hello! This is our fourth note, Hurray!",
+      "content": "Hello! This is our fourth note.",
       "date": "30/07/2022"
     },
     {
-      "content": "Hello! This is our fifth note, Hurray!\n",
+      "content": "Hello! This is our fifth note.",
       "date": "30/07/2022",
       "id": 5
     },
     {
-      "content": "Hello! This is our sixth note, Hurray!",
+      "content": "Hello! This is our sixth note.",
       "date": "31/07/2022",
       "id": 6
     },
     {
-      "content": "Hello! This is our seventh note, Hurray!",
+      "content": "Hello! This is our seventh note.",
       "date": "31/07/2022",
       "id": 7
     },
     {
-      "content": "Hello! This is our eighth note, Hurray!",
+      "content": "Hello! This is our eighth note.",
       "date": "31/07/2022",
       "id": 8
     },
     {
-      "content": "Hello! This is our ninth note, Hurray!",
+      "content": "Hello! This is our ninth note.",
       "date": "31/07/2022",
       "id": 9
+    },
+    {
+      "content": "Hello! This is our tenth note.",
+      "date": "31/07/2022",
+      "id": 10
     }
   ]
 }

@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
-
 body {
   margin: 0;
-  font-family: 'Source Serif Pro', serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background: rgb(231, 231, 231);
 }
 
@@ -39,9 +37,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   white-space: pre-wrap;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .note-footer {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;

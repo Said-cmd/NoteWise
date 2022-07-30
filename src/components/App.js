@@ -7,7 +7,11 @@ function App() {
   const [notes, setNotes] = useState([]);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const appClass = isDarkMode ? "App dark" : "App light";
-
+  const [search, setSearch] = useState('');
+  
+  function handleDarkMode() {
+	setIsDarkMode((isDarkMode) => !isDarkMode);
+  }
  
   useEffect(() => {
     fetch("http://localhost:5001/notes")
@@ -38,9 +42,9 @@ function App() {
   return (
 	<div className={appClass}>
       <div className="container">
-		<Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        <Search />
-        <NoteList notes={notes} setNotes={setNotes} handleAddNote={addNote} />
+		<Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} handleDarkMode={handleDarkMode} />
+        <Search setSearch={setSearch} />
+        <NoteList notes={notes} setNotes={setNotes} handleAddNote={addNote} search={search} />
       </div>
 	  </div>
   );
