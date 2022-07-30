@@ -55,6 +55,7 @@ body {
 
 .note.new {
   background-color: rgb(0, 200, 255);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 textarea {

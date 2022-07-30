@@ -23,7 +23,7 @@ function NewNote({ handleAddNote }) {
             <textarea 
             rows="8"
             cols="10"
-            placeholder="Add a new note"
+            placeholder="Add a new note..."
             value={noteContent}
             onChange={handleChange}
             >
