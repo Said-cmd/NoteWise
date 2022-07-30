@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
-import NotesList from "./components/NotesList";
-import Search from "./components/Search";
+import NoteList from "./NoteList";
+import Search from "./Search";
+import Header from "./Header";
 
 function App() {
   const [notes, setNotes] = useState([]);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const appClass = isDarkMode ? "App dark" : "App light";
 
+ 
   useEffect(() => {
-    fetch("http://localhost:5000/notes")
+    fetch("http://localhost:5001/notes")
       .then((r) => r.json())
       .then((notes) => setNotes(notes))
   },[])
@@ -17,7 +21,7 @@ function App() {
       content: content,
       date: date.toLocaleDateString()
     }
-    fetch("http://localhost:5000/notes", {
+    fetch("http://localhost:5001/notes", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,10 +36,13 @@ function App() {
 
 }
   return (
+	<div className={appClass}>
       <div className="container">
+		<Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <Search />
-        <NotesList notes={notes} setNotes={setNotes} handleAddNote={addNote} />
+        <NoteList notes={notes} setNotes={setNotes} handleAddNote={addNote} />
       </div>
+	  </div>
   );
 }
 

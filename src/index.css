@@ -1,295 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 body {
-	margin: 0;
-	font-family: 'Source Serif Pro', serif;
-	  background-color: rgb(0, 35, 70);
+  margin: 0;
+  font-family: 'Source Serif Pro', serif;
+  background: rgb(231, 231, 231);
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.App.dark {
+	background-color: rgb(0, 35, 70);
+	transition: all 0.3s;
   }
-  
+
+.App.dark h1 {
+	color: white;
+  }
+
 .container {
-	max-width: 960px;
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: 15px;
-	padding-left: 15px;
-  }
-  
-  .note {
-	background-color: rgb(127, 227, 255);
-	border-radius: 12px;
-	padding: 1.5rem;
-	min-height: 170px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	white-space: pre-wrap;
-  }
-  
-  .note-footer {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-  }
-  
-  .notes-list {
-	display: grid;
-	grid-gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-  
-  .note.new {
-	background-color: rgb(0, 200, 255);
-  }
-  
-  textarea {
-	border: none;
-	resize: none;
-	background-color: rgb(0, 200, 255);
-  }
-  
-  textarea:focus {
-	outline: none;
-  }
-  
-  .add {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.note {
+  background-color: rgb(127, 227, 255);
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.note.new {
+  background-color: rgb(0, 200, 255);
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: rgb(0, 200, 255);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.add {
+  cursor: pointer;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.toggle-icon {
 	cursor: pointer;
-  }
-  
-  .delete-icon {
-	cursor: pointer;
-  }
-  
-  .search {
-	display: flex;
-	align-items: center;
-	background-color: rgb(240, 236, 236);
-	border-radius: 10px;
-	padding: 5px;
-	margin-bottom: 1.5em;
-  }
-  .search input {
-	border: none;
-	width: 100%;
-	background-color: rgb(240, 236, 236);
-  }
-  
-  .search input:focus {
-	outline: none;
-  }
-  
-  
-.App {
-	background-color: #fff;
-	height: 100vh;
-}
-
-.Navbar {
-	height: 60px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color:rgb(0, 21, 41);
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
-.Navbar > .nav-logo {
-	font-weight: 700;
-	font-size: 21px;
-	margin: 15px;
-	color: #ffffff;
-}
-
-.Navbar > .nav-items > a {
-	color: #ffffff;
-	font-size: 16px;
-	text-decoration: none;
-	margin: 15px;
-	position: relative;
-	opacity: 0.9;
-}
-
-.Navbar > .nav-items > a:hover {
-	opacity: 1;
-}
-
-.Navbar > .nav-items > a::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 0;
-	height: 2px;
-	background-color: #ffffff;
-	transition: all .45s ;
-}
-
-.Navbar > .nav-items > a:hover::before {
-	width: 100%;
-}
-
-.Navbar > .nav-toggle {
-	display: none;
 }
 
 .search {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	background-color: rgb(233, 233, 233);
-	border-radius: 10px;
-	padding: 5px;
-	margin-bottom: 1.5em;
-	justify-content: center;
-	width: 75%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(240, 236, 236);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
 }
-
 .search input {
-	display: flex;
-	border: none;
-	text-align: center;
-	justify-content: center;
-	background-color: rgb(233, 233, 233);
-	width: 50%;
+  border: none;
+  width: 100%;
+  background-color: rgb(240, 236, 236);
 }
 
 .search input:focus {
-	outline: none;
+  outline: none;
 }
 
-@media (max-width: 700px) {
-
-	.Navbar > .nav-items {	
-	position: absolute;
-	top: 60px;
-	display: flex;
-	flex-direction: column;
-	background:rgb(0, 35, 70);
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transform: translateX(-100%);
-	transition: all .45s;
-	}
-
-    .Navbar > .nav-items > a::before {
-		background: transparent;
-	}
-
-	.Navbar > .nav-items.open {
-		transform: translateX(0);
-	}
-
-	.Navbar > .nav-toggle {
-		display: flex;
-		width: 50px;
-		height: 50px; 
-		align-items: center;
-		justify-content: center;
-		cursor: pointer;
-	}
-
-	.nav-toggle > .bar {
-		position: relative;
-		width: 32px;
-		height: 2px;
-		background: #ffffff;
-	}
-
-	.nav-toggle > .bar::before , 
-	.nav-toggle > .bar::after {
-		 content: "";
-		 position: absolute;
-		 height: 2px;
-		 background: #ffffff;
-		 border-radius: 2px;
-		 transition: all .45s ease-in-out;
-	}
-
-	.nav-toggle > .bar::before {
-		width: 25px;
-		transform: translateY(-8px);
-		right: 0;
-	}
-
-	.nav-toggle > .bar::after {
-		width: 32px;
-		transform: translateY(8px);
-	}
-
-	.nav-toggle.open > .bar {
-		transform: translateX(-40px);
-		background: transparent;
-	}
-
-	.nav-toggle.open > .bar::before {
-		width: 32px;
-		transform: rotate(45deg) translate(26px, -26px);
-	}
-
-	.nav-toggle.open > .bar::after {
-		transform: rotate(-45deg) translate(26px, 26px);
-	}
-
-}
-
-div.welcome-container {
-	background-color: rgb(0, 35, 70);	
-	height: 100%;
-	width: 100%;  
-}
-
-div.login-holder {
-  text-align: center;
-  background-color: rgb(0, 35, 70);
-  border-radius: 18px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 120px auto 10em;
-  padding: 50px;
-  width: 30em;
-}
-
-div.note-form-holder {
-  text-align: center;
-  background-color: rgb(0, 35, 70);
-  border-radius: 18px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 120px auto 10em;
-  padding: 50px;
-  width: 30em;
-}
-
-Form.Label.form-label {
-  background-color: #fff;
-}
-
-h1.login-title {
-  color: #fff;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-h2.login-subtitle {
-  color: #fff;
-  padding-top: 4px;
-  padding-bottom: 8px;
-}
-
-img.image-logo {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}

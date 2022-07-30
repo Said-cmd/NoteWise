@@ -4,7 +4,7 @@ import { MdDeleteForever } from "react-icons/md"
 function Note({content, date, notes, setNotes, id }) {
 
     function handleDeleteNote() {
-        fetch(`http://localhost:5000/notes/${id}`, {
+        fetch(`http://localhost:5001/notes/${id}`, {
             method: "DELETE"
         })
             .then((r) => r.json())

@@ -1,6 +1,6 @@
 import React from "react";
 import Note from "./Note";
-import AddNote from "./AddNote";
+import NewNote from "./NewNote";
 
 function NoteList({ notes, setNotes, handleAddNote }) {
     const notesList = notes.map((note) => {
@@ -16,7 +16,7 @@ function NoteList({ notes, setNotes, handleAddNote }) {
     return (
         <div className="notes-list">
             {notesList}
-            <AddNote handleAddNote={handleAddNote}/>
+            <NewNote handleAddNote={handleAddNote}/>
         </div>
     );
 }
