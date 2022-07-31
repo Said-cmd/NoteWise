@@ -12,43 +12,28 @@
     },
     {
       "id": 3,
-      "content": "This is your third note.",
+      "content": "Hello! This is your third note.",
       "date": "30/07/2022"
     },
     {
       "id": 4,
-      "content": "Hello! This is our fourth note.",
+      "content": "Hello! This is your fourth note.",
       "date": "30/07/2022"
     },
     {
-      "content": "Hello! This is our fifth note.",
+      "content": "Hello! This is your fifth note.",
       "date": "30/07/2022",
       "id": 5
     },
     {
-      "content": "Hello! This is our sixth note.",
+      "content": "Hello! This is your sixth note.",
       "date": "31/07/2022",
       "id": 6
     },
     {
-      "content": "Hello! This is our seventh note.",
+      "content": "Hello! This is your seventh note.",
       "date": "31/07/2022",
       "id": 7
-    },
-    {
-      "content": "Hello! This is our eighth note.",
-      "date": "31/07/2022",
-      "id": 8
-    },
-    {
-      "content": "Hello! This is our ninth note.",
-      "date": "31/07/2022",
-      "id": 9
-    },
-    {
-      "content": "Hello! This is our tenth note.",
-      "date": "31/07/2022",
-      "id": 10
     }
   ]
 }
