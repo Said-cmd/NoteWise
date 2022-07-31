@@ -17,6 +17,7 @@ Once the page has fully loaded, navigate to the sticky note at the end of the li
 * Add a note
 * Delete a note
 * Search through their notes for a specific entry
+* Toggle the site to dark mode depending on preference
 
 ## Requirements
 
