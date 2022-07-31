@@ -1,7 +1,5 @@
 # NoteWise
 ## By Said-cmd
-## Link to live site on github pages:
-* 
 ## Description
 
 This project is a web application that allows users to have a note taking app on the web. Designed to mimic physical sticky notes, users can add notes, delete notes and search through their notes for specific entries. The notes are also ordered by date added which is automatically attached to footer of each note once it's generated. There's also a dark mode feature which allows the user to change the color of the site depending on their preference.
