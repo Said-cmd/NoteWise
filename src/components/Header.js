@@ -5,7 +5,7 @@ import { BsToggleOn } from "react-icons/bs";
 function Header({ handleDarkMode, isDarkMode }) { 
     return (
         <div className="header">
-            <h1>NoteWise</h1>
+            <h1>Notes</h1>
             {isDarkMode ? <BsToggleOn onClick={handleDarkMode} className="toggle-icon" size="3rem"/> : <BsToggleOff onClick={handleDarkMode} className="toggle-icon" size="3rem"/>}
         </div>
     );
