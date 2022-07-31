@@ -26,7 +26,7 @@ Once the page has fully loaded, navigate to the sticky note at the end of the li
 
 ## Installation Process
 
-Clone this repo locally using the format: git clone git@github.com:Said-cmd/NoteWise.git
+Clone this repo locally using the format: git clone https://github.com/Said-cmd/NoteWise
 
 Unzip the downloaded files and open them in a text editor of your choice.
 
