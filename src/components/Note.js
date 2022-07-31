@@ -1,5 +1,5 @@
 import React from "react";
-import { MdDeleteForever } from "react-icons/md"
+import { AiFillDelete } from "react-icons/ai"
 
 function Note({content, date, notes, setNotes, id }) {
 
@@ -21,7 +21,7 @@ function Note({content, date, notes, setNotes, id }) {
         <span>{ content }</span>
         <div className="note-footer">
             <small>{ date }</small>
-            <MdDeleteForever onClick={handleDeleteNote} className="delete-icon" size="1.5em" />
+            <AiFillDelete onClick={handleDeleteNote} className="delete-icon" size="1.5em" />
         </div>
         </div>
     );
