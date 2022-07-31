@@ -48,9 +48,9 @@ Since we have a key of notes poiting to an array of note entries, the json-serve
 
 * JavaScript- used to make the webpage responsive.
 
-* React.js - To build the entire user interface allowing for a single page web application.
+* React.js - used to build the entire user interface allowing for a single page web application.
 
-* JSON - As the data exchange format.
+* JSON - used as the data exchange format.
 
 ## License
 
