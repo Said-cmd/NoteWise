@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# NoteWise
+## By Said-cmd
+## Link to live site on github pages:
+* 
+## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application that allows users to have a note taking app on the web. Designed to mimic physical sticky notes, users can add notes, delete notes and search through their notes for specific entries. The notes are also ordered by date added which is automatically attached to footer of each note once it's generated. There's also a dark mode feature which allows the user to change the color of the site depending on their preference.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### How to use the webpage 
 
-### `npm start`
+Once the page has fully loaded, navigate to the sticky note at the end of the list (which is in the darkest shade of blue with an add icon and an "Add a note...' placeholder). Type in whatever note it is you would like to enter and click the plus icon to add it to your list of notes. To delete any note simply, tap the delete icon (bin icon). And finally filter through your exisiting notes for a specific entry using the search bar at the top of the page. Toggle dark mode on and off depending on your preference by tapping the toggle icon at the top of the screen.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Users of the application will be able to:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Add a note
+* Delete a note
+* Search through their notes for a specific entry
 
-### `npm test`
+## Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Internet access
+* A computer with a compatible browser 
 
-### `npm run build`
+## Installation Process
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone this repo locally using the format: git clone git@github.com:Said-cmd/NoteWise.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Unzip the downloaded files and open them in a text editor of your choice.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run npm install to install the node modules and package dependancies.
 
-### `npm run eject`
+Run json-server --watch db.json assuming you have the json-server installed globally to the the server. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Since we have a key of notes poiting to an array of note entries, the json-server will generate the following routes:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* GET /notes - when you load the site.
+* POST /notes - whenever you add a new note.
+* DELETE /notes/:id - whenever delete a note.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* HTML - used to structure the webpage.
 
-## Learn More
+* CSS - used to style the user interface and the webpage as a whole.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* JavaScript- used to make the webpage responsive.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* React.js - To build the entire user interface allowing for a single page web application.
 
-### Code Splitting
+* JSON - As the data exchange format.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+## MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Copyright (c) [2022] [Said-cmd]
 
-### Making a Progressive Web App
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GitHub: https://github.com/Said-cmd
