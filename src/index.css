@@ -98,3 +98,6 @@ textarea:focus {
   outline: none;
 }
 
+.sidebar {
+  background-color: rgb(231, 231, 231);
+}
